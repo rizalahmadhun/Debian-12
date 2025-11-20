@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN mkdir -p /data /novnc /opt/qemu /cloud-init
 
 # Download Debian 12 cloud image
-RUN curl -L https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.qcow2 \
+RUN curl -L https://cdimage.debian.org/images/cloud/trixie/latest/debian-13-generic-amd64.qcow2 \
     -o /opt/qemu/debian.img
 
 # Create cloud-init metadata
